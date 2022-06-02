@@ -1,0 +1,28 @@
+spring:
+  #datasource configuration
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/indatacore
+    password: admin
+  #Jpa specification with Hibernate
+  jpa:
+    generate-ddl: 'true'
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    hibernate:
+      ddl-auto: update
+  #Configuration for Swagger adaptation
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jackson:
+    serialization:
+      fail-on-empty-beans: 'false'
+
+#Tomcat Port Server
+server:
+  port: '9095'
+
+
+#Csv FileDefault path config
+csv:
+  path: "C:\\Users\\admin\\Desktop\\indatacore.csv"

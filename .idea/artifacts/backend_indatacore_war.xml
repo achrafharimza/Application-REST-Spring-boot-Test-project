@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="backend-indatacore:war">
+    <output-path>$PROJECT_DIR$/backend-indatacore/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>backend-indatacore</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="backend-indatacore-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="backend-indatacore:war exploded" />
+    </root>
+  </artifact>
+</component>
